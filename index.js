@@ -12,7 +12,7 @@ class Formatter {
     let words = string.split(' ');
     let except = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from']
     words[0] = this.capitalize(words[0]);
-    for (let i = 0; i < words.length; i++) {
+    for (let i = 1; i < words.length; i++) {
       if(!except.find(e => e == words[i])){
          words[i] = this.capitalize(words[i]);
       }
